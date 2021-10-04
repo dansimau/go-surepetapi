@@ -15,3 +15,18 @@ This repo contains three interesting tools:
   Surepet cloud API. Partial implementation.
 * `github.com/dansimau/go-surepetapi/cmd/hksurepet`: Homekit bridge for Surepet
   cat flap. Creates a switch to manage lock status.
+
+## Configuration
+
+Create a config file called `surepet.yaml` and place it in your current (or a
+parent) directory:
+
+```lang=yaml
+api:
+  authToken:
+  emailAddress:
+  password:
+```
+
+You can fill either `emailAddress` and `password` OR run `surepet token` to
+generate an auth token and fill out `authToken` instead.
